@@ -1,3 +1,5 @@
+![Sistema-de-estoque](/src/imagem/sistema-estoque.png)
+
 # Projeto de Busca de Usuários do GitHub
 
 Este projeto é uma aplicação simples em **React** e **TypeScript** que permite buscar perfis de usuários do **GitHub** e visualizar informações importantes como avatar, localização, número de seguidores e quem o usuário está seguindo.
