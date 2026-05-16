@@ -1,4 +1,4 @@
-![Sistema-de-estoque](/src/imagem/sistema-estoque.png)
+![Buscar-usuarios-github](/imagem/busca-usuarios-github.png)
 
 # Projeto de Busca de Usuários do GitHub
 
