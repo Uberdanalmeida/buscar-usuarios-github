@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       }
     ]
   }
-])
+], { basename: '/Buscar-repositorios/' })
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
