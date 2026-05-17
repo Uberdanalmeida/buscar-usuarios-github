@@ -1,0 +1,80 @@
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.backButton {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.reposList {
+  display: grid;
+  gap: 16px;
+}
+
+.repoCard {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.2s;
+}
+
+.repoCard:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.repoCard h3 {
+  margin: 0 0 8px 0;
+  color: #0066cc;
+}
+
+.repoCard h3 a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.repoCard h3 a:hover {
+  text-decoration: underline;
+}
+
+.description {
+  margin: 8px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.info {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.language {
+  color: #666;
+}
+
+.stars {
+  color: #ffc400;
+  font-weight: bold;
+}
