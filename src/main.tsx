@@ -20,7 +20,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/Buscar-repositorios/" },
+  { basename: "/buscar-usuarios-github/" },
 );
 
 createRoot(document.getElementById("root")!).render(
