@@ -7,7 +7,7 @@
 .backButton {
   padding: 10px 20px;
   margin-bottom: 20px;
-  background-color: #007bff;
+  background-color: #4c6ff2;
   color: white;
   border: none;
   border-radius: 4px;
@@ -17,13 +17,13 @@
 }
 
 .backButton:hover {
-  background-color: #0056b3;
+  background-color: #365bd0;
 }
 
 h2 {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #333;
+  color: #eef2ff;
 }
 
 .reposList {
@@ -32,24 +32,24 @@ h2 {
 }
 
 .repoCard {
-  border: 1px solid #ddd;
+  border: 1px solid #28375d;
   border-radius: 8px;
   padding: 16px;
-  background-color: #f9f9f9;
+  background-color: #11173c;
   transition: box-shadow 0.2s;
 }
 
 .repoCard:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(14, 24, 85, 0.35);
 }
 
 .repoCard h3 {
   margin: 0 0 8px 0;
-  color: #0066cc;
+  color: #9bbcff;
 }
 
 .repoCard h3 a {
-  color: #0066cc;
+  color: #9bbcff;
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ h2 {
 
 .description {
   margin: 8px 0;
-  color: #666;
+  color: #c4d0ff;
   font-size: 14px;
 }
 
@@ -71,10 +71,10 @@ h2 {
 }
 
 .language {
-  color: #666;
+  color: #a3b7ff;
 }
 
 .stars {
-  color: #ffc400;
+  color: #ffd87c;
   font-weight: bold;
 }
