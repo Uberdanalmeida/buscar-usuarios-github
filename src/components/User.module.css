@@ -32,7 +32,6 @@
 }
 
 .stats .number {
-  background-color: #52d5c8;
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
 }
@@ -64,4 +63,9 @@
 
 .user a:hover {
   opacity: 1;
+}
+
+.number {
+  color: #f4f7ff;
+  font-weight: bold;
 }
