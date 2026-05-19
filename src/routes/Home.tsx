@@ -1,5 +1,5 @@
 import type { UserProps } from "../type/user"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Search from "../components/Search"
 import Erro from "../components/Erro"
 import User from "../components/User"
@@ -7,6 +7,18 @@ import User from "../components/User"
 function Home() {
     const [user, setUser] = useState<UserProps | null>(null)
     const [erro, setErro] = useState(false)
+
+    // Restaura o usuário do localStorage ao carregar a página
+    useEffect(() => {
+        const savedUser = localStorage.getItem('githubUser')
+        if (savedUser) {
+            try {
+                setUser(JSON.parse(savedUser))
+            } catch {
+                localStorage.removeItem('githubUser')
+            }
+        }
+    }, [])
 
     const loadUser = async (userName: string) => {
         setErro(false)
@@ -31,9 +43,12 @@ function Home() {
                 following
             }
             setUser(userData)
+            // Salva o usuário no localStorage
+            localStorage.setItem('githubUser', JSON.stringify(userData))
         } else {
       
             setUser(null);
+            localStorage.removeItem('githubUser')
             console.error('Usuário não encontrado.');
         }
     }
