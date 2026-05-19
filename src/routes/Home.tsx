@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Search from "../components/Search";
 import Erro from "../components/Erro";
 import User from "../components/User";
+import classes from "./Home.module.css";
 
 function Home() {
   const [user, setUser] = useState<UserProps | null>(null);
@@ -62,9 +63,9 @@ function Home() {
     <div>
       <Search loadUser={loadUser} />
       {user && (
-        <div>
+        <div className={classes.userContainer}>
           <User {...user} />
-          <button onClick={clearUser} style={{ marginTop: "20px", padding: "10px 20px", cursor: "pointer" }}>
+          <button onClick={clearUser} className={classes.clearButton}>
             Limpar Usuário
           </button>
         </div>
